@@ -6,6 +6,9 @@ import os, sys, asyncio, time
 from pathlib import Path
 from dotenv import load_dotenv
 
+# Manual provider probe; it is not part of the pytest suite.
+__test__ = False
+
 load_dotenv(Path(__file__).parent.parent / ".env", override=True)
 
 TESTS = [
